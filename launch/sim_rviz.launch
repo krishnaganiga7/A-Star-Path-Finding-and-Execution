@@ -1,0 +1,7 @@
+<launch>
+
+  <node type="stageros" name="stage_sim" pkg="stage_ros" args="-d $(find ros_pa2)/world/playground.world" />
+
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find ros_pa2)/include/config/config.rviz" />
+  
+</launch>
